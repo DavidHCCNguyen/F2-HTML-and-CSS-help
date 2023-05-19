@@ -1,55 +1,233 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HTML and CSS Tutorials</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <title>HTML and CSS Tutorial</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<h1>HTML and CSS Tutorials</h1>
-		<nav>
-			<ul>
-				<li><a href="#html-tutorial">HTML Tutorial</a></li>
-				<li><a href="#css-tutorial">CSS Tutorial</a></li>
-				<li><a href="#resources">Resources</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="html-tutorial">
-			<h2>HTML Tutorial</h2>
-			<p>HTML stands for HyperText Markup Language, and it is used to create web pages. Here are some basic HTML tags you can use:</p>
-			<ul>
-				<li>&lt;html&gt; - Defines an HTML document</li>
-				<li>&lt;head&gt; - Contains metadata and links to external files</li>
-				<li>&lt;title&gt; - Defines the title of the document</li>
-				<li>&lt;body&gt; - Contains the visible content of the document</li>
-				<li>&lt;h1&gt; to &lt;h6&gt; - Defines headings of different levels</li>
-				<li>&lt;p&gt; - Defines a paragraph</li>
-				<li>&lt;a&gt; - Defines a hyperlink</li>
-				<li>&lt;img&gt; - Defines an image</li>
-				<li>&lt;ul&gt; and &lt;li&gt; - Defines an unordered list</li>
-				<li>&lt;ol&gt; and &lt;li&gt; - Defines an ordered list</li>
-				<li>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; - Defines a table</li>
-				<li>&lt;form&gt;, &lt;input&gt;, and &lt;button&gt; - Defines a form and its elements</li>
-			</ul>
-		</section>
-		<section id="css-tutorial">
-			<h2>CSS Tutorial</h2>
-			<p>CSS stands for Cascading Style Sheets, and it is used to style web pages. Here are some basic CSS properties you can use:</p>
-			<ul>
-				<li>color - Defines the text color</li>
-				<li>background-color - Defines the background color</li>
-				<li>font-family - Defines the font family</li>
-				<li>font-size - Defines the font size</li>
-				<li>text-align - Defines the text alignment</li>
-				<li>padding - Defines the padding around an element</li>
-				<li>margin - Defines the margin around an element</li>
-				<li>border - Defines the border of an element</li>
-				<li>display - Defines how an element is displayed</li>
-				<li>float - Defines how an element is positioned</li>
-			</ul>
-		</section>
-		<section id="resources">
-			<h2>Resources</h2>
-			<p>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#html">HTML Basics</a></li>
+        <li><a href="#css">CSS Basics</a></li>
+        <li><a href="#box-model">Box Model</a></li>
+        <li><a href="#layout">Layout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+        <h1>Welcome to the HTML and CSS Tutorial Website</h1>
+        <p>
+          This website is designed to help you learn and master the fundamentals of HTML and CSS, the building blocks of web development.
+        </p>
+        <p>
+          HTML (Hypertext Markup Language) is used to structure the content of web pages, while CSS (Cascading Style Sheets) is used to style and format the visual presentation of those web pages.
+        </p>
+        <p>
+          Whether you are a beginner looking to get started or an experienced developer looking to brush up on your skills, this website provides comprehensive tutorials, examples, and interactive exercises to assist you on your journey.
+        </p>
+      </section>
+
+      <section id="html">
+        <h2>HTML Basics</h2>
+        <p>
+          HTML (Hypertext Markup Language) is the standard markup language used to create the structure and content of web pages. It consists of various tags and attributes that define the elements on a web page.
+        </p>
+        <p>
+          HTML follows a specific syntax and structure. An HTML document typically begins with the <code>&lt;!DOCTYPE html&gt;</code> declaration, followed by the <code>&lt;html&gt;</code> tag that encloses the entire document. The document is further divided into the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> sections.
+        </p>
+        <p>
+          In HTML, there are numerous tags available to represent different types of content. Some of the basic HTML tags include <code>&lt;h1&gt;</code> for headings, <code>&lt;p&gt;</code> for paragraphs, <code>&lt;div&gt;</code> for divisions, <code>&lt;a&gt;</code> for hyperlinks, and <code>&lt;img&gt;</code> for images, among many others.
+        </p>
+        <p>
+          HTML attributes provide additional information or properties to HTML elements. Attributes are placed within the opening tag of an element and provide instructions or values that modify the behavior or appearance of the element. For example, the <code>href</code> attribute in the <code>&lt;a&gt;</code> tag specifies the URL of the hyperlink.
+        </p>
+        <p>
+          Here are a few examples of HTML tags and attributes in action:
+        </p>
+        <pre><code>
+          &lt;h1&gt;Heading 1&lt;/h1&gt;
+          &lt;p&gt;This is a paragraph.&lt;/p&gt;
+          &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+          &lt;img src="image.jpg" alt="Image"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;Unordered list item 1&lt;/li&gt;
+            &lt;li&gt;Unordered list item 2&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ol&gt;
+            &lt;li&gt;Ordered list item 1&lt;/li&gt;
+            &lt;li&gt;Ordered list item 2&lt;/li&gt;
+          &lt;/ol&gt;
+          &lt;table&gt;
+            &lt;tr&gt;
+              &lt;th&gt;Table Header&lt;/th&gt;
+              &lt;th&gt;Table Header&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;Table Data&lt;/td&gt;
+              &lt;td&gt;Table Data&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+          &lt;form action="submit.php" method="post"&gt;
+            &lt;input type="text" name="username" placeholder="Username"&gt;
+            &lt;input type="password" name="password" placeholder="Password"&gt;
+            &lt;button type="submit"&gt;Submit&lt;/button&gt;
+          &lt;/form&gt;
+        </code></pre>
+        <p>
+          Feel free to experiment with these examples and explore the wide range of HTML tags and attributes available to structure and customize your web pages.
+        </p>
+      </section>
+      
+      
+
+      <section id="css">
+        <h2>CSS Basics</h2>
+        <p>
+          CSS (Cascading Style Sheets) is a stylesheet language used for styling and formatting the visual presentation of HTML documents. It allows you to control the colors, layout, fonts, and other visual aspects of your web pages.
+        </p>
+        <p>
+          CSS can be applied to HTML documents in three ways: inline, internal, and external stylesheets. Inline styles are applied directly to HTML elements using the <code>style</code> attribute. Internal styles are defined within the <code>&lt;style&gt;</code> tags in the <code>&lt;head&gt;</code> section of an HTML document. External stylesheets are created in separate CSS files and linked to HTML documents using the <code>&lt;link&gt;</code> tag.
+        </p>
+        <p>
+          CSS selectors allow you to target specific HTML elements and apply styles to them. There are different types of CSS selectors, including element selectors (targeting HTML elements), class selectors (targeting elements with a specific class), ID selectors (targeting elements with a specific ID), and more.
+        </p>
+        <p>
+          CSS properties define the visual properties of HTML elements. Examples of CSS properties include <code>color</code> (text color), <code>font-size</code> (font size), <code>margin</code> (spacing around an element), and <code>background-color</code> (background color), among others. CSS values are assigned to these properties to determine how the elements should be styled.
+        </p>
+        <p>
+          CSS provides a variety of color representation options, including named colors (e.g., <code>red</code>, <code>blue</code>), hexadecimal values (e.g., <code>#FF0000</code>), RGB values (e.g., <code>rgb(255, 0, 0)</code>), and HSL values (e.g., <code>hsl(0, 100%, 50%)</code>).
+        </p>
+        <p>
+          Units and measurements in CSS allow you to specify sizes and distances. Common units include pixels (<code>px</code>), percentages (<code>%</code>), em, rem, and viewport units. These units enable you to create responsive and flexible layouts.
+        </p>
+        <p>
+          Here's an example of CSS usage:
+        </p>
+        <pre><code>
+          h1 {
+            color: blue;
+            font-size: 24px;
+          }
+        </code></pre>
+        <p>
+          This example selects all <code>&lt;h1&gt;</code> elements and sets their text color to blue and font size to 24 pixels.
+        </p>
+        <p>
+          Here are additional CSS properties you can use:
+        </p>
+        <pre><code>
+          h1 {
+            color: blue;
+            font-size: 24px;
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+            border: 1px solid black;
+            display: block;
+            float: left;
+          }
+        </code></pre>
+        <p>
+          Feel free to experiment with CSS and explore its various selectors, properties, values, and units. You can apply CSS styles to HTML elements to create visually appealing and customized web pages.
+        </p>
+      </section>
+      
+      
+
+      <section id="box-model">
+        <h2>Box Model and CSS Positioning</h2>
+        <p>
+          The box model is a fundamental concept in CSS that defines how elements are rendered on a web page. It consists of four main components: content, padding, border, and margin. Understanding the box model is crucial for controlling the layout and spacing of elements.
+        </p>
+        <p>
+          The content area represents the actual content, such as text or an image, contained within an element. The padding is the space between the content and the element's border. The border surrounds the content and padding, and the margin is the space outside the element, creating a gap between it and other elements.
+        </p>
+        <p>
+          By manipulating the box model properties in CSS, you can control the size, spacing, and borders of elements. Common properties include <code>width</code> and <code>height</code> to set the dimensions, <code>padding</code> to adjust the spacing inside the element, <code>border</code> to define the border style, and <code>margin</code> to control the spacing outside the element.
+        </p>
+        <p>
+          The <code>box-sizing</code> property allows you to control how the total width and height of an element are calculated. The default value, <code>content-box</code>, includes only the content area in the specified width and height. The <code>border-box</code> value includes the content, padding, and border within the specified width and height. Using <code>border-box</code> can simplify calculations when designing layouts.
+        </p>
+        <p>
+          CSS positioning allows you to control the placement of elements within a web page. There are different positioning options: static (default positioning), relative (relative to its normal position), absolute (relative to its nearest positioned ancestor), and fixed (relative to the viewport).
+        </p>
+        <p>
+          Here's an example showcasing the usage of different positioning techniques:
+        </p>
+        <pre><code>
+          .box {
+            position: relative;
+            top: 20px;
+            left: 50px;
+          }
+      
+          .box.absolute {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+      
+          .box.fixed {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+          }
+        </code></pre>
+        <p>
+          In this example, the first box has a relative position with a 20-pixel offset from the top and a 50-pixel offset from the left. The second box has an absolute position relative to its nearest positioned ancestor, and it is positioned at the top right of the container. The third box has a fixed position relative to the viewport and is positioned at the bottom left.
+        </p>
+        <p>
+          Experiment with manipulating the box model properties and CSS positioning to control the layout and placement of elements on your web pages.
+        </p>
+      </section>
+      
+
+      <section id="layout">
+        <h2>Layout with CSS</h2>
+        <p>
+          CSS provides various techniques to create layouts and organize the structure of web pages. The <code>display</code> property is a fundamental CSS property that allows you to control how elements are rendered in relation to each other.
+        </p>
+        <p>
+          The <code>display</code> property has several values, including <code>inline</code>, <code>block</code>, <code>inline-block</code>, and <code>flex</code>. The <code>inline</code> value makes elements flow in the line, side-by-side, without line breaks. The <code>block</code> value creates block-level elements that occupy the entire width of the container. The <code>inline-block</code> value combines features of both <code>inline</code> and <code>block</code>, allowing elements to flow in a line while still retaining their block-like properties. The <code>flex</code> value enables flexible box layouts and provides powerful alignment and distribution capabilities.
+        </p>
+        <p>
+          CSS Grid Layout is another powerful layout system that allows you to create complex grid-based designs. It provides a two-dimensional grid structure that allows you to specify rows and columns and place elements in specific grid areas. With CSS Grid, you have precise control over the placement and alignment of elements within the grid.
+        </p>
+        <p>
+          Here's an example demonstrating the usage of different layout techniques:
+        </p>
+        <pre><code>
+          .container {
+            display: flex;
+            justify-content: space-between;
+          }
+      
+          .item {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px;
+          }
+        </code></pre>
+        <p>
+          In this example, the container uses <code>display: flex</code> to create a flexible box layout. The <code>justify-content: space-between</code> property distributes the items evenly along the main axis with equal space between them. Each item inside the container has <code>display: inline-block</code>, creating a line of elements with a specified width, height, background color, and margin.
+        </p>
+        <p>
+          Feel free to experiment with different layout techniques, such as changing the display value, utilizing CSS Grid, or adjusting other properties, to create the desired layout for your web pages.
+        </p>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>&copy; 2023 DavidHCCNguyen. All rights reserved.</p>
+</footer>
+</body>
+</html>
